@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Password Generator</title>
+</head>
+
+<body>
+	<header>
+		<h1>Password Generator</h1>
+		<hr class="no-css">
+	</header>
+
+	<main>
+		<div class="pw-generator">
+			<span class="title"></span>
+			<form class="me-hide" action="">
+				<div class="char-amount">
+					<input type="range" min="8" max="128" name="range" value="8" id="charRange">
+					<input class="number-input" type="number" min="8" max="128" name="number" value="8" id="charNumber">
+				</div>
+
+				<div class="char-type">
+					<span>Include Lowercase: </span>
+					<label for="include-lower-y">Yes</label>
+					<input type="radio" id="include-lower-y" name="use-lower">
+					<label for="include-lower-n">No</label>
+					<input type="radio" id="include-lower-n" name="use-lower">
+				</div>
+
+				<div class="char-type">
+					<span>Include Uppercase: </span>
+					<label for="include-upper-y">Yes</label>
+					<input type="radio" id="include-upper-y" name="use-upper">
+					<label for="include-upper-n">No</label>
+					<input type="radio" id="include-upper-n" name="use-upper">
+				</div>
+
+				<div class="char-type">
+					<span>Include Numbers: </span>
+					<label for="include-numbers-y">Yes</label>
+					<input type="radio" id="include-numbers-y" name="use-numbers">
+					<label for="include-numbers-n">No</label>
+					<input type="radio" id="include-numbers-n" name="use-numbers">
+				</div>
+
+				<div class="char-type">
+					<span>Include Special Characters: </span>
+					<label for="include-special-y">Yes</label>
+					<input type="radio" id="include-special-y" name="use-special">
+					<label for="include-special-n">No</label>
+					<input type="radio" id="include-special-n" name="use-special">
+				</div>
+
+			</form>
+
+			<div class="pw-frame" hidden></div>
+
+			<button type="submit" id="pw-gen">Generate Password</button>
+
+		</div>
+	</main>
+
+	<footer>
+		<hr class="no-css">
+		&copy; 2020 Jennifer Buck All Rights Reserved.
+	</footer>
+
+	<script src="js/script.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.no-css,
+.me-hide {
+	display: none;
+}
+
+body {
+	background-color: rgb(196, 175, 175);
+	color: black;
+	min-height: 100vh;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.pw-generator {
+	background-color: rgb(119, 186, 189);
+	padding: 3rem;
+	border-radius: 1rem;
+	border: 2px dashed black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.title {
+	text-align: center;
+}
+
+.char-amount {
+	display: flex;
+	align-items: center;
+}
+
+.number-input {
+	width: 6ch;
+}
+
+.passDisplay {
+	background-color: honeydew;
+	color: black;
+	padding: 1rem;
+	border: dashed darkgrey;
+	font-weight: lighter;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 2rem;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-all;
+	border-radius: .5rem;
+}
+
+button {
+	grid-column: span 1;
+	background-color: red;
+	color: black;
+	padding: 1rem 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+}
